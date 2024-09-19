@@ -1,0 +1,46 @@
+/* For the entire board background */
+.kanban-board {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  background-color: #e0e0e0; /* Grey background */
+  min-height: 100vh; /* Make sure it covers the entire height */
+}
+
+/* For each ticket group (e.g., Todo, In Progress, Done) */
+.ticket-group {
+  flex: 1;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f9f9f9;
+  min-width: 300px; /* Ensure groups are displayed side by side */
+  border-radius: 8px;
+}
+
+/* For individual tickets (white cards) */
+.ticket-card {
+  background-color: #ffffff; /* White background */
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a shadow to cards */
+}
+
+/* For the ticket card header (title and priority icon) */
+.ticket-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* For priority and status icons */
+.priority-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.status-icon {
+  width: 20px;
+  height: 20px;
+}
